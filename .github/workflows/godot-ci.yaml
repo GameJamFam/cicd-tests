@@ -4,6 +4,9 @@ on: push
 env:
   GODOT_VERSION: 3.3.4
   EXPORT_NAME: test-project
+  ITCHIO_USERNAME: gamejamfam
+  ITCHIO_GAME: test-project
+  BUTLER_API_KEY: ${{ secrets.ITCH_IO_API_KEY }}
 
 jobs:
   export-windows:
