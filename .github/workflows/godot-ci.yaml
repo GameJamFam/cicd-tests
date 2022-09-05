@@ -35,7 +35,7 @@ jobs:
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
           CHANNEL: windows
-          ITCH_GAME: $EXPORT_NAME
+          ITCH_GAME: ${EXPORT_NAME}
           ITCH_USER: ${{ secrets.ITCH_USER }}
           PACKAGE: build/windows
 
@@ -68,7 +68,7 @@ jobs:
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
           CHANNEL: linux
-          ITCH_GAME: $EXPORT_NAME
+          ITCH_GAME: ${EXPORT_NAME}
           ITCH_USER: ${{ secrets.ITCH_USER }}
           PACKAGE: build/linux
 
@@ -109,7 +109,7 @@ jobs:
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
           CHANNEL: web
-          ITCH_GAME: $EXPORT_NAME
+          ITCH_GAME: ${EXPORT_NAME}
           ITCH_USER: ${{ secrets.ITCH_USER }}
           PACKAGE: build/web
 
@@ -142,6 +142,6 @@ jobs:
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
           CHANNEL: mac
-          ITCH_GAME: $EXPORT_NAME
+          ITCH_GAME: ${EXPORT_NAME}
           ITCH_USER: ${{ secrets.ITCH_USER }}
           PACKAGE: build/mac
